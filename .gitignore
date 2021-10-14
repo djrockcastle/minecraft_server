@@ -34,3 +34,6 @@ world/
 world_nether/
 world_the_end/
 
+# Minecraft plugin files #
+!plugins/GroupManager/worlds/world/
+plugins/GroupManager/backup/
