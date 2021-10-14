@@ -10,9 +10,10 @@
 
 groups:
   Default:
-    default: true
+    default: false
     permissions:
     - -bukkit.command.kill
+    - -mv.bypass.gamemode.*
     inheritance:
     - g:groupmanager_default
     - g:bukkit_default
@@ -23,7 +24,7 @@ groups:
       build: false
       suffix: ''
   Builder:
-    default: false
+    default: true
     permissions: []
     inheritance:
     - default

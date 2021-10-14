@@ -126,7 +126,7 @@ groups:
     - essentials.afk
     - essentials.afk.auto
     - essentials.back
-    - essentials.back.ondeath
+    # - essentials.back.ondeath
     - essentials.balance
     - essentials.balance.others
     - essentials.balancetop
