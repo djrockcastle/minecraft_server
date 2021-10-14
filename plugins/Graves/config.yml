@@ -200,7 +200,7 @@ settings:
         enabled: true
         line:
           - "&7%owner_name% &c☠"
-          - "&r%item% &7items &r/ %level% &7/levels"
+          - "&r%item% &7items &r/ %level% &7levels"
           - "&7Killed &rby &c%killer_name%"
           
           # - "&7%owner_name%'s &rGrave"
