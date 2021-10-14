@@ -24,7 +24,7 @@
 
 # A color code between 0-9 or a-f. Set to 'none' to disable.
 # In 1.16+ you can use hex color codes here as well. (For example, #613e1d is brown).
-ops-name-color: '4'
+ops-name-color: 'none'
 
 # The character(s) to prefix all nicknames, so that you know they are not true usernames.
 nickname-prefix: '~'
@@ -136,7 +136,7 @@ item-spawn-blacklist:
 permission-based-item-spawn: false
 
 # Mob limit on the /spawnmob command per execution.
-spawnmob-limit: 10
+spawnmob-limit: 100
 
 # Shall we notify users when using /lightning?
 warn-on-smite: true
@@ -464,7 +464,7 @@ auto-afk-kick: -1
 # Other players or monsters can't push the player out of AFK mode then.
 # This will also enable temporary god mode for the AFK player.
 # The player has to use the command /afk to leave the AFK mode.
-freeze-afk-players: false
+freeze-afk-players: true
 
 # When the player is AFK, should he be able to pickup items?
 # Enable this, when you don't want people idling in mob traps.
@@ -518,7 +518,7 @@ vanishing-items-policy: keep
 binding-items-policy: keep
 
 # When players die, should they receive the coordinates they died at?
-send-info-after-death: false
+send-info-after-death: true
 
 # Should players with permissions be able to join and part silently?
 # You can control this with essentials.silentjoin and essentials.silentquit permissions if it is enabled.
@@ -769,7 +769,7 @@ compass-towards-home-perm: false
 spawn-if-no-home: true
 
 # Should players be asked to provide confirmation for homes which they attempt to overwrite?
-confirm-home-overwrite: false
+confirm-home-overwrite: true
 
 ############################################################
 # +------------------------------------------------------+ #
@@ -893,7 +893,7 @@ chat:
   # {TEAMPREFIX} - The sender's scoreboard team prefix.
   # {TEAMSUFFIX} - The sender's scoreboard team suffix.
 
-  format: '<{DISPLAYNAME}> {MESSAGE}'
+  format: '&2{DISPLAYNAME}&7: {MESSAGE}'
   #format: '&7[{GROUP}]&r {DISPLAYNAME}&7:&r {MESSAGE}'
   #format: '&7{PREFIX}&r {DISPLAYNAME}&r &7{SUFFIX}&r: {MESSAGE}'
 
@@ -941,10 +941,10 @@ protect:
     tnt-minecart-explosion: false
     tnt-minecart-playerdamage: false
     tnt-minecart-itemdamage: false
-    fireball-explosion: false
+    fireball-explosion: true
     fireball-fire: false
     fireball-playerdamage: false
-    fireball-itemdamage: false
+    fireball-itemdamage: true
     witherskull-explosion: false
     witherskull-playerdamage: false
     witherskull-itemdamage: false
@@ -952,8 +952,8 @@ protect:
     wither-blockreplace: false
     creeper-explosion: false
     creeper-playerdamage: false
-    creeper-itemdamage: false
-    creeper-blockdamage: false
+    creeper-itemdamage: true
+    creeper-blockdamage: true
     ender-crystal-explosion: false
     enderdragon-blockdamage: true
     enderman-pickup: false
@@ -964,7 +964,7 @@ protect:
     # permission essentials.protect.entitytarget.bypass disables this.
     entitytarget: false
     # Prevents zombies from breaking down doors
-    zombie-door-break: false
+    zombie-door-break: true
     # Prevents Ravagers from stealing blocks
     ravager-thief: false
     # Prevents sheep from turning grass to dirt
@@ -1130,7 +1130,7 @@ newbies:
   # Do we want to give users anything on first join? Set to '' to disable
   # This kit will be given regardless of cost and permissions, and will not trigger the kit delay.
   #kit: ''
-  kit: tools
+  kit: ''
 
 # What priority should we use for handling respawns?
 # Set this to none, if you want vanilla respawning behaviour.
